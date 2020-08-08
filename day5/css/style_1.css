@@ -1,0 +1,27 @@
+body {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.info p,
+.contact p {
+    display: inline;
+    margin-right: 2em;
+}
+
+.info b,
+.contact b {
+    margin-right: 0.8em;
+}
+
+h4 {
+    margin-bottom: 0;
+}
+
+h1 + div {
+    padding: 20px;
+}
+
+h4 + p {
+    margin-top: 0.5em;
+}

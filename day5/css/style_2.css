@@ -1,0 +1,14 @@
+h1 {
+    float: left;
+    width: 20%;
+    height: auto; 
+    line-height: 780px;
+    color: white;
+    text-align: center;
+    background-color: rgb(64, 179, 255);
+}
+
+h1 + div {
+    margin-left: 23%;
+    height: 700px;
+}

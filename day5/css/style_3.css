@@ -1,0 +1,51 @@
+h1 {
+    padding-left: 2em;
+    margin: 0;
+    height: 80px;
+    line-height: 80px;
+    color: white;
+    background-color: rgb(114, 114, 114);
+}
+
+body > div > div {
+    height: 150px;
+}
+
+h2 {
+    /* display: inline-block; */
+    width: 20%;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    margin: 0;
+    /* padding: 50px 0; */
+    background-color: lightgray;
+}
+
+h1 + div {
+    padding: 0;
+}
+
+h2 + div {
+    /* display: inline-block; */
+    float: right;
+    margin-top: -152px;
+    padding-left: 10px;
+    width: calc(80% - 2px);
+    height: 150px;
+    background-color: springgreen;
+}
+
+h2,
+h2 + div {
+    border: 1px solid white;
+}
+
+h4 {
+    margin-top: 10px;
+}
+
+.info div,
+.contact div {
+    padding-top: 10px;
+}

@@ -1,0 +1,67 @@
+body {
+  width: 50%;
+  margin: 30px auto;
+  padding: 30px 50px;
+  border: solid 1px;
+  border-radius: 5px;
+  background: #EEE;
+  box-shadow: 5px 5px 10px;
+}
+
+h1 {
+  color: #060;
+}
+
+h2 {
+  border-left: 5px solid red;
+  padding-left: 15px;
+}
+
+p, li {
+  color: rgb(255, 115, 0);
+}
+
+span {
+  margin: 0 10px;
+  color: #A8A8A8;
+}
+
+ul li {
+  list-style-type: square;
+}
+
+h1:first-child {
+  font-size: 48px;
+  color: blue;
+  letter-spacing: 30px; 
+  text-align: center;
+  text-shadow: 3px 3px 5px yellow;
+}
+
+#description {
+  text-indent: 2em;
+}
+
+#send-mail {
+  margin-left: 1em;
+}
+
+#send-mail:link {
+  color: green;
+  text-decoration: none;
+}
+
+#send-mail:visited {
+  color: purple;
+  text-decoration: underline;
+}
+
+#send-mail:hover {
+  color: blue;
+  text-decoration: none;
+}
+
+#send-mail:active {
+  color: blue;
+  text-decoration: underline;
+}
