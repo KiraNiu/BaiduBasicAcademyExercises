@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>左栏30%宽度，右栏70%宽度</title>
+    </head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        div {
+            height: 100%;
+            text-align: center;
+        }
+        
+        body {
+            margin: 0 200px;
+            min-width: 200px;
+        }
+        .middle {
+            float: left;
+            width: 100%;
+            background-color: chartreuse;
+        }
+        .left {
+            position: relative;
+            left: -200px;
+            float: left;
+            margin-left: -100%;
+            width: 200px;
+            background-color: blue;
+        }
+        .right {
+            position: relative;
+            right: -200px;
+            float: left;
+            margin-left: -200px;
+            width: 200px;
+            background-color: red;
+        }
+
+    </style>
+    <body>
+        <div class="middle">
+            <h3>中间</h3>
+            <p>BFC全称”Block Formatting Context”, 中文为“块级格式化上下文”。
+                    BFC元素特性表现原则就是，内部子元素再怎么翻江倒海，翻云覆雨都不会影响外部的元素。                   
+                    什么时候会触发BFC呢？常见的如下：                   
+                    - `float`的值不为`none`。
+                    - `overflow`的值为`auto`,`scroll`或`hidden`。
+                    - `display`的值为`table-cell`, `table-caption`, `inline-block`中的任何一个。
+                    - `position`的值不为`relative`和`static`。</p>
+        </div>
+        <div class="left">左栏</div>
+        <div class="right">右栏</div>
+    </body>
+</html>

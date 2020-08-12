@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>圣杯布局/双飞翼布局</title>
+        <style>
+            div {
+                text-align: center;
+            }
+            .header,
+            .footer {
+                width: 100%;
+                background-color: antiquewhite;
+                height: 50px;
+            }
+            .container {
+                height: 500px;
+                overflow: hidden;
+                padding: 0 200px;
+            }
+            .middle {
+                width: 100%;
+                height: 500px;
+                background-color: cornflowerblue;
+                float: left;
+            }
+            .left {
+                width: 200px;
+                height: 500px;
+                background-color: chartreuse;
+                float: left;
+                margin-left: -100%;
+                position: relative;
+                left: -200px;
+            }
+            .right {
+                width: 200px;
+                height: 500px;
+                background-color: deeppink;
+                float: left;
+                margin-left: -200px;
+                position: relative;
+                right: -200px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">header</div>
+        <div class="container">
+            <div class="middle">
+                <h3>中间弹性区</h3>
+                <p>稍微了解前端的人都知道，圣杯布局和双飞翼布局是前端面试时必问的问题，因为它既能体现你懂HTML结构又能体现出你对ＤIV+CSS布局的掌握，毕竟我们学习CSS主要就是为了更好地布局带来最好的用户体验嘛~</p>
+                <p>事实上，圣杯布局其实和双飞翼布局是一回事。它们实现的都是三栏布局，两边的盒子宽度固定，中间盒子自适应，也就是我们常说的固比固布局。它们实现的效果是一样的，差别在于其实现的思想。</p>
+                <p>圣杯布局的出现是来自于a list part上的一篇文章In Search of the Holy Grail。比起双飞翼布局，它的起源不是源于对页面的形象表达。在西方，圣杯是表达“渴求之物”的意思。而双飞翼布局则是源于淘宝的UED，可以说是灵感来自于页面渲染。</p>
+            </div>
+            <div class="left">左边栏</div>
+            <div class="right">右边栏</div>
+        </div>
+        <div class="footer">footer</div>
+    </body>
+</html>

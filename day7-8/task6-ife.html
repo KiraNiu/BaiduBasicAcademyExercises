@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>ife</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            .header {
+                height: 60px;
+                width: 100%;
+                background-color: #303030;
+            }
+            .header-area {
+                color: white;
+                width: 960px;
+                margin: 0 auto;
+            }
+            .header-area h1 {
+                float: left;
+                line-height: 60px;
+            }
+            .header-area ul {
+                float: right;
+                margin-top: 10px;
+                list-style: none;
+            }
+            .header-area ul li {
+                float: left;
+                margin-right: 30px;
+            }
+            .header-area ul li a {
+                color: white;
+            }
+            .banner {
+                position: relative;
+                height: 150px;
+                width: 100%;
+                background-color: springgreen;
+            }
+            .banner-area {
+                margin: 0 auto;
+                width: 960px;
+            }
+            .banner-area ul {
+                position: absolute;
+                left: 1000px;
+                bottom: 10px;
+                list-style: none;
+            }
+            .banner-area ul li {
+                float: left;
+                margin-right: 10px;
+                padding: 10px;
+                border: 1px solid black;
+                background-color: chartreuse;
+            }
+            #banner-active {
+                background-color: rgb(222, 253, 173);
+            }
+            .nav {
+                height: 50px;
+                width: 100%;
+                border-bottom-width: 1px;
+                border-bottom-style: solid;
+                border-bottom-color: gainsboro;
+            }
+            .nav-area {
+                position: relative;
+                height: 100%;
+                width: 960px;
+                margin: 0 auto;
+            }
+            .nav-area ul {
+                position: absolute;
+                bottom: -1px;
+                list-style: none;
+            }
+            .nav-area ul li {
+                float: left;
+                padding: 8px 20px;
+                border: 1px solid gainsboro;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                background-color: lightgray;
+            }
+            #nav-active {
+                border-bottom-color: white;
+                background-color: white;
+            }
+            .main {
+                height: 400px;
+                width: 100%;
+            }
+            .main-area {
+                display: flex;
+                flex-wrap: wrap;
+                width: 960px;
+                margin: 0 auto;
+            }
+            .main-area div {
+                margin: 5px;
+                flex: 0px;
+                padding: 80px;
+                border: 1px solid gainsboro;
+            }
+            .footer {
+                position: absolute;
+                bottom: 0px;
+                height: 30px;
+                width: 100%;
+                background-color: gray;
+            }
+            .footer-area {
+                width: 960px;
+                margin: 0 auto;
+                text-align: center;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-area">
+                <h1>Logo</h1>
+                <ul>
+                    <li><a href="">Github</a></li>
+                    <li><a href="">Register</a></li>
+                    <li><a href="">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="banner">
+            <div class="banner-area">
+                <ul>
+                    <li>1</li>
+                    <li id="banner-active">2</li>
+                    <li>3</li>
+                    <li>4</li>
+                </ul>
+            </div>
+        </div>
+        <div class="nav">
+            <div class="nav-area">
+                <ul>
+                    <li id="nav-active">HOME</li>
+                    <li>PROFILE</li>
+                    <li>ABOUT</li>
+                </ul>
+            </div>
+        </div>
+        <div class="main">
+            <div class="main-area">
+                <div>This is Content1</div>
+                <div>Maybe Content2</div>
+                <div>Content3</div>
+                <div>Content4</div>
+                <div>Content5</div>
+                <div>Content6</div>
+                <div>Content7</div>
+                <div>Content8</div>
+                <div>Content9</div>
+                <div>Content10</div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer-area">
+                ©&nbsp;2018&nbsp;&nbsp;ife.baidu.com
+            </div>
+        </div>
+    </body>
+</html>
