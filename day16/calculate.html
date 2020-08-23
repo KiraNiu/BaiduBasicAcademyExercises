@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果：<span></span></p>
+    <script>
+        var num1;
+        var num2;
+        document.getElementById("add-btn").onclick = function() {
+            getVal();
+            document.getElementById("result").firstElementChild.innerHTML = num1 + num2;
+        }
+
+        document.getElementById("minus-btn").onclick = function() {
+            getVal();
+            document.getElementById("result").firstElementChild.innerHTML = num1 - num2;
+        }
+
+        document.getElementById("times-btn").onclick = function() {
+            getVal();
+            document.getElementById("result").firstElementChild.innerHTML = num1 * num2;
+        }
+
+        document.getElementById("divide-btn").onclick = function() {
+            getVal();
+            document.getElementById("result").firstElementChild.innerHTML = num1 / num2;
+        }
+
+        function getVal() {
+            num1 = parseInt(document.getElementById("first-number").value);
+            num2 = parseInt(document.getElementById("second-number").value);
+        }
+    </script>
+</body>
+</html>
